@@ -1,0 +1,137 @@
+
+.modal__wrapper {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 14;
+      background: rgba(0,0,0, 0.5);
+ }
+
+.modal-popup {
+    padding: 92px 85px;
+	width: 1100px;
+    max-width: 100%;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 15;
+    transition: right 0.3s ease-in-out;
+    background: url("popup-bg.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    position: absolute;
+}
+
+@media screen and (max-width: 1300px) {
+  .modal-popup {
+    width: auto;
+  }
+}
+
+.modal__title {
+font-weight: 700;
+font-size: 62px;
+line-height: 77px;
+letter-spacing: -0.05em;
+margin-bottom: 30px;
+color: #FFFFFF;
+}
+
+.modal__desc {	
+max-width: 550px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: -0.02em;
+color: rgba(255, 255, 255, 0.7);
+
+}
+
+.modal__close {
+  width: 73px;
+  height: 73px;	
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+
+
+.modal__show {	
+right: 0;
+}
+
+
+.modal__body {
+  max-width: 480px;
+  margin-top: 35px;
+  /*margin-bottom: 110px;*/
+}
+
+.modal__body-title {
+  margin-bottom: 8px;
+}
+
+.modal__form {
+  margin-top: 24px;
+}
+
+.modal__timer{
+	display: inline-flex;
+	padding: 40px 30px;
+	background-color: #fff;
+	border-radius: 36px;
+	margin-top: 70px;
+}
+
+.modal__timer-inner{
+	display: flex;
+}
+
+.modal__timer-col{
+	width: 80px;	
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 64px;
+}
+
+.desc_number{
+	font-size: 12px;
+	color: #D5CAC6;
+}
+
+#group{
+	font-size: 64px;
+}
+
+.button-float{
+	display: none;
+	text-align: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    background-color: #fff;
+    border-radius: 999px;
+    z-index: 99;
+    box-shadow: 0 80px 179px rgb(78 73 114 / 5%), 0 51.8519px 104.831px rgb(78 73 114 / 4%), 0 30.8148px 57.0148px rgb(78 73 114 / 3%), 0 16px 29.0875px rgb(78 73 114 / 3%), 0 6.51852px 14.5852px rgb(78 73 114 / 2%), 0 1.48148px 7.04398px rgb(78 73 114 / 1%);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button-float:hover{
+	background-color: #54C62C;
+}
+
+.button-float.--show{
+	display: block;
+}
