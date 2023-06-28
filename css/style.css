@@ -961,7 +961,7 @@ li {
 
 .favorite__title {
 	text-align: left;
-	/* font-size: 40px; */
+	font-size: 38px;
 	line-height: 140%;
 }
 .favorite__title:not(:last-child) {
@@ -1007,6 +1007,10 @@ li {
 
 	.favorite__container:nth-child(even) {
 		flex-direction: column-reverse;
+	}
+
+	.favorite__title {
+		font-size: 32px;
 	}
 
 	.favorite__title:not(:last-child) {
