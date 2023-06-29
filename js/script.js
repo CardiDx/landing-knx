@@ -21,3 +21,31 @@ burgerMenu.addEventListener("click", function () {
   this.classList.toggle("close");
   overlay.classList.toggle("overlay");
 });
+
+$(".popup-youtube").magnificPopup({
+  disableOn: 700,
+  type: "iframe",
+  mainClass: "mfp-fade",
+  removalDelay: 300,
+  preloader: false,
+  fixedContentPos: false,
+});
+
+// send message on email Ajax
+$("#main-form").submit(function () {
+  $.ajax({
+    type: "POST",
+    url: "mail.php",
+    data: $(this).serialize(),
+  }).done(function () {
+    $(this).find("input").val("");
+
+    $.magnificPopup.open({
+      items: {
+        src: "#thankyou",
+      },
+      mainClass: "mfp-letter",
+    });
+  });
+  return false;
+});

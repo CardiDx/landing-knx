@@ -17,22 +17,3 @@ $(".show-thank-you").magnificPopup({
   mainClass: "my-mfp-slide-bottom",
   fixedContentPos: true,
 });
-
-// send message on email Ajax
-$("#main-form").submit(function () {
-  $.ajax({
-    type: "POST",
-    url: "mail.php",
-    data: $(this).serialize(),
-  }).done(function () {
-    $(this).find("input").val("");
-
-    $.magnificPopup.open({
-      items: {
-        src: "#thankyou",
-      },
-      mainClass: "mfp-letter",
-    });
-  });
-  return false;
-});
