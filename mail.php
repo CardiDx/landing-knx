@@ -17,13 +17,13 @@ $phone = $_POST['phone'];
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';                                                // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'bmw.t@bk.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'zXTRsiATzzZoYocyBnyR'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = 'papa.kera@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = 'artlight17!'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('bmw.t@bk.ru'); // от кого будет уходить письмо?
-$mail->addAddress('bmw.t@bk.ru');     // Кому будет уходить письмо
+$mail->setFrom('papa.kera@mail.ru'); // от кого будет уходить письмо?
+$mail->addAddress('papa.kera@mail.ru');     // Кому будет уходить письмо
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');

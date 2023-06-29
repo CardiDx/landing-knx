@@ -415,7 +415,6 @@ button {
 	left: 0;
 	object-fit: cover;
 	border-radius: 0 0 160px 375px;
-	background-color: #ff6428;
 }
 
 /* .main__image::after {
