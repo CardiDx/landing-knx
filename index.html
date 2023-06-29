@@ -9,7 +9,6 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 	<title>Rhythm</title>
 </head>
 
@@ -18,7 +17,7 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="menu-space"></div>
-				<nav class="header__menu menu">
+				<nav class="header__menu menu" id="menu">
 
 					<div class="menu-footer__column">
 						<a href="tel:+84959618611" class="contacts-footer__link contacts-footer__link_phone">8(495)961-86-11</a>
@@ -35,9 +34,12 @@
 						<a href="" class="social-footer__item">
 							<img src="img/tg-icon.svg" alt="">
 						</a>
+
 					</div>
 				</nav>
-
+				<div id="burger-menu">
+					<span></span>
+				</div>
 			</div>
 		</header>
 		<main class="page">
@@ -45,7 +47,6 @@
 				<div class="main__container">
 					<div class="main__decor">
 						<div class="main__image">
-							<!-- <img src="img/main/main-decor.png" alt="Main Decor"> -->
 							<img src="img/main/wa-image.png" alt="Main Decor">
 						</div>
 					</div>
@@ -63,7 +64,7 @@
 
 						<div class="main__actions actions-main">
 							<span class="price"> РРЦ 68 000р</span>
-							<a href="#" class="actions-main__button">Заказать</a>
+							<a href="#openPopup" class="actions-main__button show-sontact-us">Заказать</a>
 
 						</div>
 					</div>
@@ -221,11 +222,9 @@
 						<h2 class="why__title title"><span>Руководство</span> Пользователя</h2>
 						<p class="heading__text">Если у вас возникли дополнительные вопросы или проблемы, посмотрите наше видео</p>
 					</div>
-					<div class="why__items">
-						<div class="img-preview">
-							<img class="" src="img/video-preview.png" alt="">
-							<a class="why__items-link" href="https://youtu.be/ILlU0OVq5r4" target="_blank"><img src="img/play.svg" alt=""></a>
-						</div>
+					<div class="img-preview">
+						<img class="" src="img/video-preview.png" alt="">
+						<a class="why__items-link" href="https://youtu.be/ILlU0OVq5r4" target="_blank"><img src="img/play.svg" alt=""></a>
 					</div>
 				</div>
 			</section>
@@ -275,8 +274,32 @@
 			</div>
 		</footer>
 	</div>
-	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+	<div class="popup popup--contact-us mfp-hide">
+		<div class="popup-content">
+			<h3 class="popup__title">Оставить<span class="br-mob"></span> заявку</h3>
+			<form action="mail.php" id="main-form" class="popup-form send-form" method="POST">
+				<input type="text" name="user-name" class="popup__input" placeholder="Имя">
+				<input type="text" name="phone" class="popup__input" placeholder="Номер телефона">
+				<input type="submit" value="Заказать" class="popup__btn">
+			</form>
+		</div>
+	</div>
+
+	<div class="popup popup--thank-you mfp-hide" id="thankyou">
+		<div class="popup-content popup-content--wide">
+			<img src="/img/icons/popup-check.svg" alt="Заявка отправлена!" class="popup__svg">
+			<h3 class="popup__title popup__title--mb15">Заявка<span class="br-mob"></span> отправлена!</h3>
+			<span class="popup__subtitle">Наш менеджер свяжется с Вами в ближайшее время!</span>
+		</div>
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
 	<script src="js/script.js"></script>
+	<script src="js/popup.js"></script>
 </body>
 
 </html>
