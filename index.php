@@ -9,7 +9,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+	<link rel="stylesheet" href="js/magnific-popup.css">
 	<title>Rhythm</title>
 </head>
 
@@ -226,7 +226,7 @@
 
 					<div class="img-preview">
 						<img class="" src="img/video-preview.png" alt="">
-						<a class="popup-youtube why__items-link" href="https://www.youtube.com/watch?v=ILlU0OVq5r4"><img src="img/play.svg" alt=""></a>
+						<a class="popup-youtube why__items-link" href="http://www.youtube.com/watch?v=ILlU0OVq5r4"><img src="img/play.svg" alt=""></a>
 
 					</div>
 				</div>
@@ -301,10 +301,10 @@
 	</div>
 
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-	<script src="js/popup.js"></script>
+	<script src="js/jquery-3.6.0.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/popup.js"></script>
 </body>
 
 </html>

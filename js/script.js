@@ -15,13 +15,6 @@
 // 	});
 // }
 
-var burgerMenu = document.getElementById("burger-menu");
-var overlay = document.getElementById("menu");
-burgerMenu.addEventListener("click", function () {
-  this.classList.toggle("close");
-  overlay.classList.toggle("overlay");
-});
-
 $(".popup-youtube").magnificPopup({
   disableOn: 700,
   type: "iframe",
@@ -29,6 +22,26 @@ $(".popup-youtube").magnificPopup({
   removalDelay: 300,
   preloader: false,
   fixedContentPos: false,
+});
+
+// popups
+
+$(".show-sontact-us").magnificPopup({
+  items: {
+    src: ".popup--contact-us",
+  },
+  type: "inline",
+  mainClass: "my-mfp-slide-bottom",
+  fixedContentPos: true,
+});
+
+$(".show-thank-you").magnificPopup({
+  items: {
+    src: ".popup--thank-you",
+  },
+  type: "inline",
+  mainClass: "my-mfp-slide-bottom",
+  fixedContentPos: true,
 });
 
 // send message on email Ajax
